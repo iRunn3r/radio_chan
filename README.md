@@ -18,3 +18,6 @@ To retrieve the thread that will be scraped:
 
 To generate a playlist:  
 `poetry run generate-playlist`  
+
+
+The thread link and playlist file will appear in the `staging` folder.  
