@@ -6,6 +6,9 @@ authors = ["Vaidas <vaidas.budrys3@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+beautifulsoup4 = "^4.11.1"
+requests = "^2.27.1"
+lxml = "^4.8.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -13,3 +16,6 @@ pytest = "^5.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-thread = "radio_chan.get-thread:start"
