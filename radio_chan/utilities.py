@@ -15,3 +15,8 @@ def write_to_file(message, path):
 
     with open(path, "w") as f:
         f.write(message)
+
+
+def read_all_text(path):
+    with open(path, "r") as f:
+        return f.read()

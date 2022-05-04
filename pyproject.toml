@@ -19,3 +19,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 get-thread = "radio_chan.get-thread:start"
+generate-playlist = "radio_chan.generate-playlist:generate_playlist"

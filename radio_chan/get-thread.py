@@ -18,13 +18,6 @@ SEARCH_TERM = "YGYL"
 SAVE_PATH = "staging/thread.txt"
 
 
-def find_most_popular(collection):
-    for item in collection:
-        if SEARCH_TERM.lower() in item[1].lower() or SEARCH_TERM.lower() in item[2].lower():
-            return item[0]
-    return None
-
-
 def start():
     page = requests.get(URL, allow_redirects=False)
     soup = BeautifulSoup(page.text, "lxml")
