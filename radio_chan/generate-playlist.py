@@ -34,4 +34,4 @@ def generate_playlist():
 
     cwd = os.getcwd()
     playlist_path = os.path.join(cwd, SAVE_PATH)
-    print(playlist_path)
+    print(f"Generated playlist at path: {playlist_path}")
