@@ -2,7 +2,6 @@ FROM ubuntu:22.04
 
 # Set up variables
 ARG python_ver=python3.10
-ARG poetry=.poetry/bin/poetry
 
 # Update apt
 RUN apt-get update && apt-get -y upgrade
