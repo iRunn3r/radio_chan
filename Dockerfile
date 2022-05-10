@@ -33,4 +33,4 @@ EXPOSE 1410 1410
 RUN useradd -m vlcuser
 USER vlcuser
 
-ENTRYPOINT ["cvlc", "--no-video", "--sout", "#transcode{vcodec=none,acodec=vorb,ab=128,channels=2,samplerate=44100}:http{dst=:1410/live.ogg}", "--no-sout-all", "--sout-keep", "staging/playlist.m3u"]
+CMD ["cvlc", "--no-video", "--sout", "#transcode{vcodec=none,acodec=vorb,ab=128,channels=2,samplerate=44100}:http{dst=:1410/live.ogg}", "--no-sout-all", "--sout-keep", "staging/playlist.m3u"]
