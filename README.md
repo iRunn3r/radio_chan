@@ -4,20 +4,11 @@
 This Python application enables web-scraping a specific 4chan thread for video/audio and streaming it through a web 
 player.
 
-## Requirements
-* `Python 3.10+`
-* [Poetry](https://python-poetry.org/)
+## Running using Docker
+### Requirements
+* [Docker](https://docs.docker.com/get-docker/)
 
-## Installation
-`poetry install`
-
-## Usage
-To retrieve the thread that will be scraped:  
-`poetry run get-thread`  
-
-
-To generate a playlist:  
-`poetry run generate-playlist`  
-
-
-The thread link and playlist file will appear in the `staging` folder.  
+### Usage
+`docker-compose up`  
+Running the above command will generate a new playlist and start the streaming server. The client 
+can be accessed on [http://localhost:1410/live.ogg](http://localhost:1410/live.ogg).  
