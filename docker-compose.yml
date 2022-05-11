@@ -1,7 +1,6 @@
 services:
   server:
-    image: radio_chan
-    build: .
+    image: irunn3r/radio_chan
     ports:
       - 1410
   localtunnel:

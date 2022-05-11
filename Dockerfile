@@ -31,4 +31,6 @@ RUN poetry run generate-playlist
 RUN useradd -m vlcuser
 USER vlcuser
 
+EXPOSE 1410/tcp
+
 CMD ["cvlc", "--no-video", "--sout", "#transcode{vcodec=none,acodec=vorb,ab=128,channels=2,samplerate=44100}:http{dst=:1410/radio.ogg}", "--no-sout-all", "--sout-keep", "staging/playlist.m3u"]
