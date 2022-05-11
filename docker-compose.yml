@@ -1,6 +1,15 @@
 services:
   server:
-    image: radio_chan:latest
+    image: radio_chan
     build: .
     ports:
-      - "1410:1410"
+      - 1410
+  localtunnel:
+    image: efrecon/localtunnel
+    restart: on-failure
+    command:
+      --local-host server --port 1410 --subdomain bardaciokas
+    links:
+      - server
+    depends_on:
+      - server
