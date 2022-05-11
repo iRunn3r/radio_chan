@@ -1,3 +1,9 @@
+.git/
 .idea/
 staging/
+tests/
+
 *.pyc
+Dockerfile
+README.md
+.gitignore
